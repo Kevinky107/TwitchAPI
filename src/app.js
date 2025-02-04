@@ -1,15 +1,19 @@
+const dotenv = require('dotenv');
+const { translateController } = require('./controllers/translate');
+
+dotenv.config();
+
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.use(express.json()); // Middleware para parsear JSON
+app.use(express.urlencoded({extended: true}));
 
 // Ruta de ejemplo
 app.get('/', (req, res) => {
   res.send('¡Hola, mundo!');
 });
 
-// Iniciar servidor
-app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`);
-});
+app.use('/translate', translateController);
+
+module.exports = { app };
