@@ -9,7 +9,7 @@
       "region": "eu-west-3",
       "runtime": "nodejs20.x",
       "environment": {
-        "DeeplKEY": "DeeplKEY=24a98c7a-c1b6-4961-bf05-9ae5d1409258:fx"
+        "DeeplKEY": "24a98c7a-c1b6-4961-bf05-9ae5d1409258:fx"
       },
       "stage": "dev",
       "versionFunctions": true,
@@ -106,16 +106,16 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-west-3-b432ea2e-2b43",
-                "S3Key": "serverless/kevinky-mod/dev/1738699390378-2025-02-04T20:03:10.378Z/kevinky-mod.zip"
+                "S3Key": "serverless/kevinky-mod/dev/1738703962704-2025-02-04T21:19:22.704Z/kevinky-mod.zip"
               },
-              "Handler": "dist/lambda.handler",
+              "Handler": "src/lambda.handler",
               "Runtime": "nodejs20.x",
               "FunctionName": "kevinky-mod-dev-app",
               "MemorySize": 1024,
               "Timeout": 6,
               "Environment": {
                 "Variables": {
-                  "DeeplKEY": "DeeplKEY=24a98c7a-c1b6-4961-bf05-9ae5d1409258:fx"
+                  "DeeplKEY": "24a98c7a-c1b6-4961-bf05-9ae5d1409258:fx"
                 }
               },
               "Role": {
@@ -129,14 +129,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionwmsFkNGTqviTZ9gTFX7JmYsCjGEhnteMd7ZLlMSDxs": {
+          "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "gny9bMEJ+iD3jDR9LYcdbPI65CHDxFJVODpf1GmouCc="
+              "CodeSha256": "JdtT37P9TvxoHvZzGcZsuO3kEHuS0SOZdM6yVtcn8is="
             }
           },
           "ApiGatewayRestApi": {
@@ -354,7 +354,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1738699385389": {
+          "ApiGatewayDeployment1738703956696": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -417,7 +417,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionwmsFkNGTqviTZ9gTFX7JmYsCjGEhnteMd7ZLlMSDxs"
+              "Ref": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
             },
             "Export": {
               "Name": "sls-kevinky-mod-dev-AppLambdaFunctionQualifiedArn"
@@ -456,7 +456,7 @@
     "pluginsData": {},
     "functions": {
       "app": {
-        "handler": "dist/lambda.handler",
+        "handler": "src/lambda.handler",
         "events": [
           {
             "http": {
@@ -513,25 +513,13 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionwmsFkNGTqviTZ9gTFX7JmYsCjGEhnteMd7ZLlMSDxs"
+        "versionLogicalId": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
       }
     },
     "configValidationMode": "warn",
     "serviceFilename": "serverless",
     "initialServerlessConfig": {
       "service": "kevinky-mod",
-      "package": {
-        "patterns": [
-          "!./**",
-          "package.json",
-          "node_modules/**",
-          "dist/**"
-        ],
-        "artifactsS3KeyDirname": "serverless/kevinky-mod/dev/code-artifacts",
-        "deploymentBucket": "serverless-framework-deployments-eu-west-3-b432ea2e-2b43",
-        "artifact": "C:\\Users\\Kevin\\Desktop\\Oxygen\\TwitchAPI\\.serverless\\kevinky-mod.zip",
-        "artifactDirectoryName": "serverless/kevinky-mod/dev/1738699390378-2025-02-04T20:03:10.378Z"
-      },
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
       },
@@ -545,7 +533,7 @@
     "artifact": "C:\\Users\\Kevin\\Desktop\\Oxygen\\TwitchAPI\\.serverless\\kevinky-mod.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/kevinky-mod/dev/1738699390378-2025-02-04T20:03:10.378Z",
+    "artifactDirectoryName": "serverless/kevinky-mod/dev/1738703962704-2025-02-04T21:19:22.704Z",
     "artifact": "kevinky-mod.zip"
   }
 }

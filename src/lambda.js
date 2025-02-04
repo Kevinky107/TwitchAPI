@@ -1,6 +1,8 @@
-const { app } = require('app');
+const { app } = require('./app');
 const serverless = require("serverless-http");
 
-module.exports.handler = serverless(app, {
+const handler = serverless(app, {
 	response: { headers: { 'Access-Control-Allow-Origin': '*' } }
 })
+
+module.exports.handler = handler;

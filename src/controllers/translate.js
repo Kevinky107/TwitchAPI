@@ -1,4 +1,4 @@
-require('dotenv').config(); // Asegúrate de cargar dotenv
+require('dotenv').config();
 
 const express = require('express');
 const deepl = require('deepl-node');
@@ -13,7 +13,7 @@ translateController.get('/:q', async (_req, res, _next) => {
         return res.status(200).json(result);
     } catch (error) {
         console.error('Error en la traducción:', error);
-        return res.status(500).json({ error: 'Error en la traducción' });
+        return res.status(500).json({ error: error.message || 'Error en la traducción' });
     }
 });
 
@@ -24,7 +24,7 @@ translateController.get('/es-en/:q', async (_req, res, _next) => {
         return res.status(200).json(result);
     } catch (error) {
         console.error('Error en la traducción:', error);
-        return res.status(500).json({ error: 'Error en la traducción' });
+        return res.status(500).json({ error: error.message || 'Error en la traducción' });
     }
 });
 
@@ -35,7 +35,7 @@ translateController.get('/en-es/:q', async (_req, res, _next) => {
         return res.status(200).json(result);
     } catch (error) {
         console.error('Error en la traducción:', error);
-        return res.status(500).json({ error: 'Error en la traducción' });
+        return res.status(500).json({ error: error.message || 'Error en la traducción' });
     }
 });
 

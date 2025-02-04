@@ -1,19 +1,13 @@
 service: kevinky-mod
-package:
-  patterns:
-    - "!./**"
-    - "package.json"
-    - "node_modules/**"
-    - "dist/**"
 provider:
   name: aws
   region: eu-west-3
   runtime: nodejs20.x
   environment:
-    DeeplKEY: ${file(./.env):DeeplKEY}
+    DeeplKEY: ${env:DeeplKEY}
 functions:
   app:
-    handler: dist/lambda.handler
+    handler: src/lambda.handler
     events:
       - http:
           path: /
