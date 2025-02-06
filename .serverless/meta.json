@@ -107,7 +107,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-west-3-b432ea2e-2b43",
-                  "S3Key": "serverless/kevinky-mod/dev/1738703962704-2025-02-04T21:19:22.704Z/kevinky-mod.zip"
+                  "S3Key": "serverless/kevinky-mod/dev/1738717230727-2025-02-05T01:00:30.727Z/kevinky-mod.zip"
                 },
                 "Handler": "src/lambda.handler",
                 "Runtime": "nodejs20.x",
@@ -130,14 +130,14 @@
                 "AppLogGroup"
               ]
             },
-            "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ": {
+            "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "AppLambdaFunction"
                 },
-                "CodeSha256": "JdtT37P9TvxoHvZzGcZsuO3kEHuS0SOZdM6yVtcn8is="
+                "CodeSha256": "12ZVIITrIPZ7rzpxZj+2coi+vnmOuIJpR/rGckuO0K4="
               }
             },
             "ApiGatewayRestApi": {
@@ -355,7 +355,7 @@
                 "AppLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1738703956696": {
+            "ApiGatewayDeployment1738717223100": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -418,7 +418,7 @@
             "AppLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
+                "Ref": "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk"
               },
               "Export": {
                 "Name": "sls-kevinky-mod-dev-AppLambdaFunctionQualifiedArn"
@@ -513,7 +513,7 @@
           "timeout": 6,
           "runtime": "nodejs20.x",
           "vpc": {},
-          "versionLogicalId": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
+          "versionLogicalId": "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk"
         }
       }
     },
@@ -619,7 +619,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-west-3-b432ea2e-2b43",
-                "S3Key": "serverless/kevinky-mod/dev/1738703962704-2025-02-04T21:19:22.704Z/kevinky-mod.zip"
+                "S3Key": "serverless/kevinky-mod/dev/1738717230727-2025-02-05T01:00:30.727Z/kevinky-mod.zip"
               },
               "Handler": "src/lambda.handler",
               "Runtime": "nodejs20.x",
@@ -642,14 +642,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ": {
+          "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "JdtT37P9TvxoHvZzGcZsuO3kEHuS0SOZdM6yVtcn8is="
+              "CodeSha256": "12ZVIITrIPZ7rzpxZj+2coi+vnmOuIJpR/rGckuO0K4="
             }
           },
           "ApiGatewayRestApi": {
@@ -867,7 +867,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1738703956696": {
+          "ApiGatewayDeployment1738717223100": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -930,7 +930,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
+              "Ref": "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk"
             },
             "Export": {
               "Name": "sls-kevinky-mod-dev-AppLambdaFunctionQualifiedArn"
@@ -988,12 +988,12 @@
     "serviceProviderAwsCfStackName": "kevinky-mod-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:eu-west-3:058264326297:stack/kevinky-mod-dev/e3eedec0-e331-11ef-ac2e-0e377666eecb",
     "serviceProviderAwsCfStackCreated": "2025-02-04T19:54:49.222Z",
-    "serviceProviderAwsCfStackUpdated": "2025-02-04T21:02:49.223Z",
+    "serviceProviderAwsCfStackUpdated": "2025-02-05T00:38:06.084Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "AppLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-west-3:058264326297:function:kevinky-mod-dev-app:9",
+        "OutputValue": "arn:aws:lambda:eu-west-3:058264326297:function:kevinky-mod-dev-app:11",
         "Description": "Current Lambda function version",
         "ExportName": "sls-kevinky-mod-dev-AppLambdaFunctionQualifiedArn"
       },
@@ -1102,7 +1102,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-west-3-b432ea2e-2b43",
-              "S3Key": "serverless/kevinky-mod/dev/1738703962704-2025-02-04T21:19:22.704Z/kevinky-mod.zip"
+              "S3Key": "serverless/kevinky-mod/dev/1738717230727-2025-02-05T01:00:30.727Z/kevinky-mod.zip"
             },
             "Handler": "src/lambda.handler",
             "Runtime": "nodejs20.x",
@@ -1125,14 +1125,14 @@
             "AppLogGroup"
           ]
         },
-        "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ": {
+        "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "AppLambdaFunction"
             },
-            "CodeSha256": "JdtT37P9TvxoHvZzGcZsuO3kEHuS0SOZdM6yVtcn8is="
+            "CodeSha256": "12ZVIITrIPZ7rzpxZj+2coi+vnmOuIJpR/rGckuO0K4="
           }
         },
         "ApiGatewayRestApi": {
@@ -1350,7 +1350,7 @@
             "AppLambdaPermissionApiGateway"
           ]
         },
-        "ApiGatewayDeployment1738703956696": {
+        "ApiGatewayDeployment1738717223100": {
           "Type": "AWS::ApiGateway::Deployment",
           "Properties": {
             "RestApiId": {
@@ -1413,7 +1413,7 @@
         "AppLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "AppLambdaVersionHLZzX0SDG1YpVyPZ7e6wdMftJjk036pbo7L1aXeQ"
+            "Ref": "AppLambdaVersionMAL235WUbPM5oe9EltctAwYeempdhuA0WfjzqYZPQTk"
           },
           "Export": {
             "Name": "sls-kevinky-mod-dev-AppLambdaFunctionQualifiedArn"
