@@ -1,10 +1,12 @@
 const dotenv = require('dotenv');
 const { translateController } = require('./controllers/translate');
+const { discordController } = require('./controllers/discord');
 const cors = require('cors');
 
 dotenv.config();
 
 const express = require('express');
+
 const app = express();
 
 app.use(cors())
@@ -17,5 +19,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/translate', translateController);
+app.use('/discord', discordController);
 
 module.exports = { app };

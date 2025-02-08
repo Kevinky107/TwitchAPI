@@ -5,6 +5,8 @@ provider:
   runtime: nodejs20.x
   environment:
     DeeplKEY: ${env:DeeplKEY}
+    DISCORD_BOT_TOKEN: ${env:DISCORD_BOT_TOKEN}
+    DISCORD_CHANNEL_ID: ${env:DISCORD_CHANNEL_ID}
 functions:
   app:
     handler: src/lambda.handler
