@@ -6,6 +6,8 @@ provider:
   environment:
     DeeplKEY: ${env:DeeplKEY}
     DISCORD_WEBHOOK_URL: ${env:DISCORD_WEBHOOK_URL}
+    DISCORD_WEBHOOK_URL_SPANISH: ${env:DISCORD_WEBHOOK_URL_SPANISH}
+    OPENAI_API_KEY: ${env:OPENAI_API_KEY}
 functions:
   app:
     handler: src/lambda.handler
